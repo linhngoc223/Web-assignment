@@ -26,7 +26,7 @@
     <div class="content">
         <br><br><br><br>
         <hr style="width:95%; margin: auto;">
-        <div class="category"><a>Nature</a></div>
+        <div class="category"><a href="#" class="category">Nature</a></div>
 
         <a href="#"><img src="Asset/image/bg.png" alt="img1"/></a>
         <a href="#"><img src="Asset/image/bg.png" alt="img1"/></a>
@@ -41,7 +41,7 @@
     <div class="content">
         <br><br><br><br>
         <hr style="width:95%; margin: auto;">
-        <div class="category"><a></a>Animal</a></div>
+        <div class="category"><a href="#" class="category">Animal</a></div>
 
         <a href="#"><img src="Asset/image/bg.png" alt="img1"/></a>
         <a href="#"><img src="Asset/image/bg.png" alt="img1"/></a>
@@ -56,7 +56,7 @@
     <div class="content">
         <br><br><br><br>
         <hr style="width:95%; margin: auto;">
-        <div class="category"><a>Human</a></div>
+        <div class="category"><a href="#" class="category">Human</a></div>
 
         <a href="#"><img src="Asset/image/bg.png" alt="img1"/></a>
         <a href="#"><img src="Asset/image/bg.png" alt="img1"/></a>
