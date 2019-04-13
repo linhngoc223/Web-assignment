@@ -39,7 +39,7 @@ if(isset($_POST["signup"])) {
 
     <div class="signup">
         <h2>
-            Sign Up Page
+            Sign Up
         </h2>
         <h5>Welcome to Sign Up page</h5>
         <?php

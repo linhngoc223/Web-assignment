@@ -24,7 +24,7 @@ session_start();
 ?>
 
     <div class="signin">
-        <h2>Sign In Page</h2>
+        <h2>Sign In</h2>
         <h5>Please enter your email and password</h5>
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']);?>">
