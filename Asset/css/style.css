@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ebebea;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Nunito', serif;
+    margin-top: 10px;
+    margin-bottom: 30px ;
+
+}
+
+.menu {
+    width: 90%;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.menu ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: left;
+    /*width: 20%;*/
+    padding: 0px 120px 0px 120px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    background: #ebebea;
+
+}
+
+.menu ul li a:hover{
+    color: red;
+}
+
+.menu ul li:hover{
+    color: red;
+}
+
+
+.content{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 35px 0;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 5px 10px;
+    margin:  0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+i{
+    margin-top: -10px;
+}
+
+img{
+    -webkit-transform:scale(0.9); /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+    -moz-transform:scale(0.9); /*Thu nhỏ đối với Mozilla*/
+    -o-transform:scale(0.9); /*Thu nhỏ đối với Opera*/
+    -webkit-transition-duration: 0.5s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+    -moz-transition-duration: 0.5s; /*Như trên*/
+    -o-transition-duration: 0.5s; /*Như trên*/
+    opacity: 0.7; /*Độ mờ của hình ảnh*/
+    width: 281px;
+    margin: 20px 23px;
+}
+
+img:hover{
+    -webkit-transform:scale(1.0); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+    -moz-transform:scale(1.0);
+    -o-transform:scale(1.0);
+    box-shadow:0px 0px 10px gray; /*Đổ bóng bằng CSS3*/
+    -webkit-box-shadow:0px 0px 0px gray;
+    -moz-box-shadow:0px 0px 0px gray;
+    opacity: 1; /*Độ mờ của hình ảnh*/
+}
+
+a{
+    background-color: white;
+}
+
+hr{
+    margin-top: 50px ;
+}
+
+.category{
+    width: 200px;
+    padding: 20px;
+    background-color: #ebebea;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.link {
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+.footer ul {
+    width: 15%;
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.footer ul li {
+    float: left;
+    background-color: white;
+    /*width: 20%;*/
+    /*padding: 0px 120px 0px 120px;*/
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+    background: #ebebea;
+
+}
+
+.footer ul li a:hover{
+    color: red;
+}
+
+i {
+    padding: 30px 32px;
+    background-color: white;
+}
+
+p {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+}
+
