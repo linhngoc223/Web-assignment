@@ -24,7 +24,7 @@
     </div>
 
     <div class="content">
-        <br><br><br><br>
+        <br><br><br>
         <hr style="width:95%; margin: auto;">
         <div class="category"><a href="#" class="category">Nature</a></div>
 
@@ -39,7 +39,7 @@
     </div>
 
     <div class="content">
-        <br><br><br><br>
+        <br><br><br>
         <hr style="width:95%; margin: auto;">
         <div class="category"><a href="#" class="category">Animal</a></div>
 
@@ -54,7 +54,7 @@
     </div>
 
     <div class="content">
-        <br><br><br><br>
+        <br><br><br>
         <hr style="width:95%; margin: auto;">
         <div class="category"><a href="#" class="category">Human</a></div>
 
