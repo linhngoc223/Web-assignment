@@ -22,17 +22,9 @@ if(isset($_POST["signup"])) {
 
     $repassword = $_POST["password-re"];
 
-    $fullname = $_POST['fullname'];
-
-    $phone = $_POST['phone'];
-
     $username = $_POST['username'];
 
-    $avatar = $_POST['avatar'];
-
-    $des = $_POST['description'];
-
-    $user->getSignUp($email, $username, $password, $fullname, $phone, $avatar,$des);
+    $user->getSignUp($email, $username, $password);
 }
 
 ?>
@@ -60,25 +52,12 @@ if(isset($_POST["signup"])) {
             Password (re-enter):<br>
             <input type="password" name="password-re" placeholder="Enter your password again"required><br>
 
-            Your fullname:<br>
-            <input type="text" name="fullname" placeholder="Enter your fullname" pattern="[a-zA-Z]{1,}" required><br>
-
             Username:<br>
             <input type="text" name="username" placeholder="Enter your username"required><br>
 
-            Phone number: <br>
-            <input type="text" name="phone" id="phone" placeholder="Enter your phone numbers" pattern="[0-9]{1,}" required>
-
-            Description:<br>
-            <input type="text" name="description" placeholder="Enter your description"required><br>
-
-
-            Avatar:<br>
-            <input type="file" name="avatar" id="avatar"><br>
-
             <input type="submit" name="signup" value="Sign Up">
 
-            <p><a href="SignIn.php" style="background: white">Have you been had account yet?</a><br></p>
+            <p><a href="SignIn.php" style="background: white">Sign in</a><br></p>
         </form>
     </div>
 

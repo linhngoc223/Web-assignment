@@ -39,7 +39,7 @@ session_start();
             <input type="submit" name="signin" value="Sign In">
         </form>
 
-        <p><a href="SignUp.php">Have you been had account yet?</a><br></p>
+        <p><a href="SignUp.php">Sign Up</a><br></p>
         <p><a href="#">Forgot username or password</a></p>
     </div>
 </body>
