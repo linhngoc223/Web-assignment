@@ -17,9 +17,14 @@ h5{
     margin-bottom: 30px ;
 
 }
+ h3{
+     background: white;
+     padding: 20px 50px;
+
+ }
 
 .menu {
-    width: 90%;
+    width: 1300px;
     background-color: #ffffff;
     margin: auto;
     margin-bottom: 50px;
@@ -36,7 +41,7 @@ h5{
 .menu ul li {
     float: left;
     /*width: 20%;*/
-    padding: 0px 120px 0px 120px;
+    padding: 0px 100px 0px 120px;
 }
 .menu ul li a{
     text-decoration: none;
@@ -55,13 +60,34 @@ h5{
 
 
 .content{
-    width: 90%;
+    width: 1300px;
     margin: auto;
     background-color: white;
     margin-bottom: 50px;
     padding: 35px 0;
 }
 
+.content ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.content ul li{
+    width: 300px;
+    float: left;
+    /*width: 20%;*/
+    margin: 10px 10px;
+    background: white;
+}
+
+.content ul li a{
+    text-decoration: none;
+
+}
 
 input[type=text], select {
     width: 100%;
@@ -79,27 +105,27 @@ i{
     margin-top: -10px;
 }
 
-img{
-    -webkit-transform:scale(0.9); /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
-    -moz-transform:scale(0.9); /*Thu nhỏ đối với Mozilla*/
-    -o-transform:scale(0.9); /*Thu nhỏ đối với Opera*/
-    -webkit-transition-duration: 0.5s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
-    -moz-transition-duration: 0.5s; /*Như trên*/
-    -o-transition-duration: 0.5s; /*Như trên*/
-    opacity: 0.7; /*Độ mờ của hình ảnh*/
-    width: 281px;
-    margin: 20px 23px;
-}
+/*img{*/
+/*    -webkit-transform:scale(0.9); !*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*!*/
+/*    -moz-transform:scale(0.9); !*Thu nhỏ đối với Mozilla*!*/
+/*    -o-transform:scale(0.9); !*Thu nhỏ đối với Opera*!*/
+/*    -webkit-transition-duration: 0.5s; !*Webkit: Thời gian phóng to, nhỏ ảnh*!*/
+/*    -moz-transition-duration: 0.5s; !*Như trên*!*/
+/*    -o-transition-duration: 0.5s; !*Như trên*!*/
+/*    opacity: 0.7; !*Độ mờ của hình ảnh*!*/
+/*    width: 281px;*/
+/*    margin: 20px 23px;*/
+/*}*/
 
-img:hover{
-    -webkit-transform:scale(1.0); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
-    -moz-transform:scale(1.0);
-    -o-transform:scale(1.0);
-    box-shadow:0px 0px 10px gray; /*Đổ bóng bằng CSS3*/
-    -webkit-box-shadow:0px 0px 0px gray;
-    -moz-box-shadow:0px 0px 0px gray;
-    opacity: 1; /*Độ mờ của hình ảnh*/
-}
+/*img:hover{*/
+/*    -webkit-transform:scale(1.0); !*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*!*/
+/*    -moz-transform:scale(1.0);*/
+/*    -o-transform:scale(1.0);*/
+/*    box-shadow:0px 0px 10px gray; !*Đổ bóng bằng CSS3*!*/
+/*    -webkit-box-shadow:0px 0px 0px gray;*/
+/*    -moz-box-shadow:0px 0px 0px gray;*/
+/*    opacity: 1; !*Độ mờ của hình ảnh*!*/
+/*}*/
 
 a{
     background-color: white;
@@ -120,11 +146,6 @@ hr{
     text-align: center;
     text-decoration: none;
     color: black;
-}
-
-.link {
-    padding: 30px 30px;
-    text-decoration: none;
 }
 
 .footer{
@@ -170,3 +191,13 @@ p {
     font-family: 'Playfair Display', serif;
 }
 
+img{
+    width:300px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.photo {
+    width: 1300px;
+    background: white;
+}
