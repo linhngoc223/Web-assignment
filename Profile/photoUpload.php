@@ -38,7 +38,7 @@
             <li style="margin: 0">
                 <img src="../Asset/image/avatar">
             </li>
-            <li style="width: 940px; padding: 0 20px">
+            <li style="width: 930px; padding: 0 20px">
                 DESCRIPTION
             </li>
         </ul>
