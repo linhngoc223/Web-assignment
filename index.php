@@ -26,8 +26,8 @@
         </ul>
     </div>
 
-    <div class="footer">
-
-    </div>
+<?php
+    include "Components/footer.php"
+?>
 </body>
 </html>

@@ -31,6 +31,13 @@ h3{
      padding: 0;
 }
 
+.fas {
+    margin:0;
+    padding: 0;
+    color: black;
+}
+
+
 
 .menu {
     width: 1300px;
@@ -88,7 +95,7 @@ h3{
     width: 300px;
     float: left;
     /*width: 20%;*/
-    margin: 10px 10px;
+    margin: 10px 12px;
     background: white;
 }
 
@@ -161,12 +168,12 @@ hr{
     margin: auto;
     background-color: white;
     text-align: center;
+    padding: 50px;
+    margin-top: 30px;
+
 }
 
-i {
-    padding: 30px 32px;
-    background-color: white;
-}
+
 
 p {
     text-align: center;
