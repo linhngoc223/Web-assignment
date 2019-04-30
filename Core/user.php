@@ -6,12 +6,7 @@ class User{
 
     public function __construct()
     {
-        define('SERVER', 'localhost');
-        define('PASSWORD', 'Rinkute_98');
-        define('DATABASE', 'ss2');
-        define('USERNAME', 'linh');
-
-        $this->db = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE);
+        $this->db = mysqli_connect('localhost', 'linh', 'Rinkute_98', 'linh');
 
         if (mysqli_connect_errno()) {
             echo "Error: Could not connect to database.";
@@ -34,13 +29,16 @@ class User{
 
     }
 
-    public function getSignUp($username,$password, $email)
+    public function getSignUp($email,$username,$password)
     {
         $password = md5($password);
 
-        $checkemail = 'SELECT * FROM users WHERE email = "' . $email . '"';
-        $checkusername = 'SELECT * FROM users WHERE username = "' . $username . '"';
+        $type =1;
 
+        $date = 'CURRENT_TIMESTAMP()';
+
+        $checkemail = 'SELECT * FROM web.Users WHERE email = "' . $email . '"';
+        $checkusername = 'SELECT * FROM web.Users WHERE username = "' . $username . '"';
         //Checking if username or email is available in database
         $check = $this->db->query($checkemail);
         $count_row = $check->num_rows;
@@ -48,12 +46,12 @@ class User{
         $count = $checkus->num_rows;
         //if the username is not in database then insert the table
         if ($count_row == 0 && $count == 0) {
-            $sqlInsertDB = 'INSERT INTO users SET email="' . strtolower($email) . '", password = "'
-                . strtolower($password) . '",username= "' . $username. '";';
+            $sqlInsertDB = 'INSERT INTO web.Users SET email="' . strtolower($email) . '", password = "'
+                . strtolower($password) . '",username= "' . $username. '"';
             mysqli_query($this->db, $sqlInsertDB);
-
             return false;
-        } else {
+        }
+        else {
             return true;
         }
     }
@@ -63,20 +61,22 @@ class User{
      */
     public function signUp()
     {
-        //Checking for user login or not
+        //Checking for User login or not
         if (isset($_REQUEST['signup'])) {
+            $email = $_POST['email'];
 
             $password = $_POST["password"];
 
             $username = $_POST['username'];
 
-            $email = $_POST["email"];
+            $_SESSION['uname'] = $username;
 
-
-            //Checking for user login or not
-            $signUp = $this->getSignUp($username, $password, $email);
+            //Checking for User login or not
+            $signUp = $this->getSignUp($email, $username, $password);
 
             if ($signUp) {
+                unset($_SESSION['email']);
+                unset($_SESSION['uname']);
                 $success = 'Sign in successful';
                 echo "<p><span class='error'>" . $success . "</span></p><br>";
             } else {
@@ -91,7 +91,7 @@ class User{
     {
 
         $password = md5($password);
-        $checklogin = 'SELECT * FROM users WHERE email="'.strtolower($email) .'"AND password="'.strtolower($password).'"';
+        $checklogin = 'SELECT * FROM web.Users WHERE email="'.strtolower($email) .'"AND password="'.strtolower($password).'"';
 
         $result = mysqli_query($this->db, $checklogin);
         $userData = mysqli_fetch_array($result);
@@ -101,11 +101,14 @@ class User{
             //this login var will use for the session thing
             $_SESSION["login"] = true;
             $_SESSION["id"] = $userData["id"];
-            $_SESSION['type']= $userData["type"];
+            $_SESSION["type"] = $userData["type"];
+            $_SESSION["username"] = $userData["username"];
             return true;
         } else {
             return false;
         }
+
+
     }
 
     public function login() {
@@ -116,12 +119,14 @@ class User{
 
             $login = $this->checkLogin($email, $password);
             if ($login) {
-                //registration success
-                header("location:/User/index.php");
+                //Login success
+                header("location:/");
+
             } else {
                 $error = "Your username or password wrong!";
                 echo "<p><span class='error'>" . $error . "</span></p><br>";
             }
+
         }
     }
 

@@ -11,10 +11,10 @@
 
 <div class="menu">
     <ul>
-        <li><a href="index.php">Home Page</a></li>
-        <li><a href="Profile/photoUpload.php">Profile</a></li>
-        <li><a href="Login/SignIn.php">Sign In</a></li>
-        <li><a href="Login/SignUp.php">Sign Up</a></li>
+        <li><a href="/">Home Page</a></li>
+        <li><a href="../Profile/photoUpload.php">Profile</a></li>
+        <li><a href="../Login/SignIn.php">Sign In</a></li>
+        <li><a href="../Login/SignUp.php">Sign Up</a></li>
         <li>
             <input type="text" name="search" value="search">
         </li>
