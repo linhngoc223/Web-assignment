@@ -12,6 +12,16 @@
         <i class="far fa-calendar-times"></i>
         Datetime
     </h5>
+    <div class="content" style="margin: 0; padding: 0">
+        <ul>
+            <li>
+                <img src="../Asset/image/avatar">
+            </li>
+            <li>
+                DESCRIPTION
+            </li>
+        </ul>
+    </div>
 </div>
 
 </body>

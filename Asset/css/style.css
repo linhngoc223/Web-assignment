@@ -19,12 +19,13 @@
 }
 h3{
      background: white;
-     padding: 20px 50px;
+     padding: 20px 50px 0 50px;
 
 }
 
 .name{
-     background: white;
+    background: white;
+    padding: 0 50px;
 }
 
 .far {
