@@ -40,7 +40,7 @@ h3{
 
 
 .menu {
-    width: 1300px;
+    width: 80%;
     background-color: #ffffff;
     margin: auto;
     margin-bottom: 50px;
@@ -50,14 +50,14 @@ h3{
     width: 100%;
     list-style-type: none;
     margin: 0;
-    padding: 30px 0;
+    padding: 30px 85px;
     overflow: hidden;
 }
 
 .menu ul li {
     float: left;
     /*width: 20%;*/
-    padding: 0px 100px 0px 120px;
+    padding: 0px 100px 0px 100px;
 }
 .menu ul li a{
     text-decoration: none;

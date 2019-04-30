@@ -6,7 +6,7 @@ include "../Components/header.php"
 
 <div class="photo">
     <fieldset>
-        <legend>Create Photo</legend>
+        <legend>Change Photo's Info</legend>
         <div class="content">
             <ul>
                 <li style="width: 250px; text-align: center">Name:</li>

@@ -12,11 +12,20 @@
 <div class="menu">
     <ul>
         <li><a href="/">Home Page</a></li>
-        <li><a href="../Profile/photoUpload.php">Profile</a></li>
-        <li><a href="../Login/SignIn.php">Sign In</a></li>
-        <li><a href="../Login/SignUp.php">Sign Up</a></li>
+        <?php
+        if ((isset($_SESSION['login']) && $_SESSION['login'] != '')) {
+            echo "<li><a href='/Profile/photoUpload.php'>Photo</a></li>";
+            echo "<li><a href='../Login/logout.php'>Log out</a>";
+        }
+        else {
+            echo "<li><a href='../Login/SignIn.php'>Sign In</a>";
+            echo "<li><a href='../Login/SignUp.php'>Sign Up</a>";
+
+        }
+        ?>
         <li>
             <input type="text" name="search" value="search">
         </li>
     </ul>
+
 </div>

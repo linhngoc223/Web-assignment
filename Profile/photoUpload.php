@@ -6,7 +6,7 @@
 
 <div class="photo">
     <fieldset>
-        <legend>Change Photo's Info</legend>
+        <legend>Create Photo</legend>
         <div class="content">
             <ul>
                 <li style="width: 250px; text-align: center">Name:</li>
