@@ -5,23 +5,33 @@
     font-family: 'Playfair Display', serif;
 }
 
-h1{
+.h1{
     text-align: center;
     margin-top: 50px;
 }
 
-h5{
+.h5{
     text-align: center;
     font-family: 'Nunito', serif;
     margin-top: 10px;
     margin-bottom: 30px ;
 
 }
- h3{
+h3{
      background: white;
      padding: 20px 50px;
 
- }
+}
+
+.name{
+     background: white;
+}
+
+.far {
+     margin:0;
+     padding: 0;
+}
+
 
 .menu {
     width: 1300px;
